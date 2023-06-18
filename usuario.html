@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nuevo usario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div >
+        <h1>nuevo usario</h1>
+    </div>
+    <b></b>
+    <form    action="./log.php"   name="formulario2"  method="post" autocomplete="off" class="formulario">
+    <legend>Ingrese los datos correspondientes</legend>
+    <p></p>
+
+    <div >
+    <table  >
+    <tr>
+        <td><label for="">Agregue su nombre :</label></td>
+        <td><input  type="text" name="Nombre" placeholder="Nombre"  pattern="[A-Za-z]{5,15}" title="Más de 5 caracteres, no números" required></td>
+    </tr>
+    <tr>
+        <td ><label for="">inserta un correo :</label></td>
+        <td><input  type="email" name="correo" placeholder="correo" required></td>
+    </tr>
+    <tr>
+        <td><label for="">Agregue un numero telefonico :</label></td>
+        <td><input  type="tel" name="tel" placeholder="Telefono" pattern="[0-9]{10,10}" title="Solo 10 numeros" required></td>
+    </tr>
+    <tr>
+        <td><label for="">inserte su Fecha de nacimiento : </label></td>
+        <td><input  type="date" name="Fechnac" placeholder="Fecha de nacimiento" required></label></td>
+    </tr>
+        <td><label for="">Genero</label></td>
+        <td><select name="Genero" >
+            <option value="1"> Mujer</option>
+            <option value="2">Hombre</option>
+            <option value="3">Otro</option>
+        </select></td>
+
+    <tr>
+        <tr>
+            <td><label for="">Ingrese el nombre de usuario :</label></td>
+            <td><input class="Datos" type="text" name="Usuario" placeholder="Usuario"  pattern="[A-Za-z]{5,15}" title="Más de 5 caracteres, no números" required></td>
+        </tr>
+        <tr>
+            <td><label for="">Ingresar la contraseña :</label></td>
+            <td><input class="Datos" type="password" name="password" placeholder="password"  pattern="[A-Za-z0-9]{5,14}" title="Más de 5 caracteres" required></td>
+        </tr>
+        <td><label for=""></label></td>
+        <td><input class="Boton" type="submit" value="Crear cuenta"></td>
+    </tr></table>
+    </div>
+    </form>
+</body>
+</html>
